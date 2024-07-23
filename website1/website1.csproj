@@ -1,0 +1,410 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4F4DB9D6-B421-4E2C-B1A1-785C8A4813FE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>website1</RootNamespace>
+    <AssemblyName>website1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44363</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="3deffectimage.aspx" />
+    <Content Include="Career.aspx" />
+    <Content Include="Classes.aspx" />
+    <Content Include="detail.aspx" />
+    <Content Include="FRONTNEW.aspx" />
+    <Content Include="FRONTVERYNEWMAIN.aspx" />
+    <Content Include="getdetail.aspx" />
+    <Content Include="image\1.jpg" />
+    <Content Include="image\2.jpg" />
+    <Content Include="image\3.jpg" />
+    <Content Include="image\4.jpg" />
+    <Content Include="image\A_black_image.jpg" />
+    <Content Include="image\bigimg.jpg" />
+    <Content Include="image\black-small-square.jpg" />
+    <Content Include="image\BLACKHD.jpg" />
+    <Content Include="image\BLACKHD1.jpg" />
+    <Content Include="image\BLACKHD2.jpg" />
+    <Content Include="image\blue.jpg" />
+    <Content Include="image\blue12.jpg" />
+    <Content Include="image\career.jpg" />
+    <Content Include="image\classimg.jpg" />
+    <Content Include="image\climgbut1.jpg" />
+    <Content Include="image\climgbut2.jpg" />
+    <Content Include="image\climgbut3.jpg" />
+    <Content Include="image\climgbut4.jpg" />
+    <Content Include="image\ddff.jpg" />
+    <Content Include="image\fb.jpg" />
+    <Content Include="image\ig.jpg" />
+    <Content Include="image\images.jpg" />
+    <Content Include="image\imgbut1.jpg" />
+    <Content Include="image\imgbut3.jpg" />
+    <Content Include="image\imgbut4.jpg" />
+    <Content Include="image\imgbut5.jpg" />
+    <Content Include="image\imgbut6.jpg" />
+    <Content Include="image\imgbut7.jpg" />
+    <Content Include="image\Lightgrey.jpg" />
+    <Content Include="image\LOCATION.jpg" />
+    <Content Include="image\login logo.jpg" />
+    <Content Include="image\login-logo-png-10.png" />
+    <Content Include="image\logo1.jpg" />
+    <Content Include="image\member.jpg" />
+    <Content Include="image\memimg.jpg" />
+    <Content Include="image\Offerstop.jpg" />
+    <Content Include="image\OIP.jpg" />
+    <Content Include="image\Perlowerside.jpg" />
+    <Content Include="image\PT.jpg" />
+    <Content Include="image\pt1.jpg" />
+    <Content Include="image\ptimg.jpg" />
+    <Content Include="image\PW.jpg" />
+    <Content Include="image\sideslide.jpg" />
+    <Content Include="image\SIGNLOGO.png" />
+    <Content Include="image\sld1.jpg" />
+    <Content Include="image\sld2.jpg" />
+    <Content Include="image\sld3.jpg" />
+    <Content Include="image\sld4.jpg" />
+    <Content Include="image\SMALLBLACK.jpg" />
+    <Content Include="image\TOP.jpg" />
+    <Content Include="image\topwavepic.jpg" />
+    <Content Include="image\vote.jpg" />
+    <Content Include="image\wavegynlast.jpg" />
+    <Content Include="LG.aspx" />
+    <Content Include="LOCATION.aspx" />
+    <Content Include="Login1.aspx" />
+    <Content Include="LOGINPAGE.aspx" />
+    <Content Include="Membership.aspx" />
+    <Content Include="MEMBERSHIPMENUNEW.aspx" />
+    <Content Include="NOTUSE.aspx" />
+    <Content Include="offer2.aspx" />
+    <Content Include="Offermenu.aspx" />
+    <Content Include="Offermenu2.aspx" />
+    <Content Include="OFFERMENUNEW.aspx" />
+    <Content Include="PERSONALTRAININGNEW.aspx" />
+    <Content Include="POPUPDEMO.aspx" />
+    <Content Include="PT.aspx" />
+    <Content Include="SIGNUP.aspx" />
+    <Content Include="SIGNUPPAGE.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="Webformmhaster.aspx" />
+    <Content Include="Welcome.aspx" />
+    <Content Include="WLCM.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3deffectimage.aspx.cs">
+      <DependentUpon>3deffectimage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3deffectimage.aspx.designer.cs">
+      <DependentUpon>3deffectimage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Career.aspx.cs">
+      <DependentUpon>Career.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Career.aspx.designer.cs">
+      <DependentUpon>Career.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes.aspx.cs">
+      <DependentUpon>Classes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes.aspx.designer.cs">
+      <DependentUpon>Classes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="detail.aspx.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="detail.aspx.designer.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FRONTNEW.aspx.cs">
+      <DependentUpon>FRONTNEW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FRONTNEW.aspx.designer.cs">
+      <DependentUpon>FRONTNEW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FRONTVERYNEWMAIN.aspx.cs">
+      <DependentUpon>FRONTVERYNEWMAIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FRONTVERYNEWMAIN.aspx.designer.cs">
+      <DependentUpon>FRONTVERYNEWMAIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="getdetail.aspx.cs">
+      <DependentUpon>getdetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="getdetail.aspx.designer.cs">
+      <DependentUpon>getdetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LG.aspx.cs">
+      <DependentUpon>LG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LG.aspx.designer.cs">
+      <DependentUpon>LG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LOCATION.aspx.cs">
+      <DependentUpon>LOCATION.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOCATION.aspx.designer.cs">
+      <DependentUpon>LOCATION.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LOGINPAGE.aspx.cs">
+      <DependentUpon>LOGINPAGE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOGINPAGE.aspx.designer.cs">
+      <DependentUpon>LOGINPAGE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MAINMASTER.Master.cs">
+      <DependentUpon>MAINMASTER.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MAINMASTER.Master.designer.cs">
+      <DependentUpon>MAINMASTER.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Membership.aspx.cs">
+      <DependentUpon>Membership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Membership.aspx.designer.cs">
+      <DependentUpon>Membership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MEMBERSHIPMENUNEW.aspx.cs">
+      <DependentUpon>MEMBERSHIPMENUNEW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MEMBERSHIPMENUNEW.aspx.designer.cs">
+      <DependentUpon>MEMBERSHIPMENUNEW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="newgymsite.Master.cs">
+      <DependentUpon>newgymsite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="newgymsite.Master.designer.cs">
+      <DependentUpon>newgymsite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="NOTUSE.aspx.cs">
+      <DependentUpon>NOTUSE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NOTUSE.aspx.designer.cs">
+      <DependentUpon>NOTUSE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="offer2.aspx.cs">
+      <DependentUpon>offer2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="offer2.aspx.designer.cs">
+      <DependentUpon>offer2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Offermenu.aspx.cs">
+      <DependentUpon>Offermenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Offermenu.aspx.designer.cs">
+      <DependentUpon>Offermenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Offermenu2.aspx.cs">
+      <DependentUpon>Offermenu2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Offermenu2.aspx.designer.cs">
+      <DependentUpon>Offermenu2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OFFERMENUNEW.aspx.cs">
+      <DependentUpon>OFFERMENUNEW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OFFERMENUNEW.aspx.designer.cs">
+      <DependentUpon>OFFERMENUNEW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONALTRAININGNEW.aspx.cs">
+      <DependentUpon>PERSONALTRAININGNEW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PERSONALTRAININGNEW.aspx.designer.cs">
+      <DependentUpon>PERSONALTRAININGNEW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="POPUPDEMO.aspx.cs">
+      <DependentUpon>POPUPDEMO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="POPUPDEMO.aspx.designer.cs">
+      <DependentUpon>POPUPDEMO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PT.aspx.cs">
+      <DependentUpon>PT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PT.aspx.designer.cs">
+      <DependentUpon>PT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SIGNUP.aspx.cs">
+      <DependentUpon>SIGNUP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SIGNUP.aspx.designer.cs">
+      <DependentUpon>SIGNUP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SIGNUPPAGE.aspx.cs">
+      <DependentUpon>SIGNUPPAGE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SIGNUPPAGE.aspx.designer.cs">
+      <DependentUpon>SIGNUPPAGE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wavegymsite.Master.cs">
+      <DependentUpon>Wavegymsite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wavegymsite.Master.designer.cs">
+      <DependentUpon>Wavegymsite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webformmhaster.aspx.cs">
+      <DependentUpon>Webformmhaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webformmhaster.aspx.designer.cs">
+      <DependentUpon>Webformmhaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WLCM.aspx.cs">
+      <DependentUpon>WLCM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WLCM.aspx.designer.cs">
+      <DependentUpon>WLCM.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="newgymsite.Master" />
+    <Content Include="MAINMASTER.Master" />
+    <Content Include="image\Plainwhite.webp" />
+    <Content Include="image\signuplogo" />
+    <None Include="packages.config" />
+    <Content Include="Wavegymsite.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53329</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44363/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,381 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MAINMASTER.master.cs" Inherits="website1.MAINMASTER" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   <title>Website Title</title>
+    <link href="Styles/Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures menu stays on top */
+}
+
+.menu-container {
+    width: 100%;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    margin-left:180px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li a {
+    color:white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.content {
+    margin-top: 100px; /* Adjust this value to match the height of your header */
+    padding: 20px;
+}
+#siteheader {
+    background-color:black;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s, background-color 0.3s, opacity 0.3s;
+}
+.transparent{
+    opacity:0.8;
+}
+
+
+
+
+         .auto-style17{
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 1473px;
+            height: 473px;
+        }
+        .auto-style18 {
+            position: absolute;
+            top: 30px;
+            left: 41px;
+            width: 17%;
+            height: 144px;
+            right: 1287px;
+        }
+        .auto-style19 {
+            position: relative;
+            margin-top:0px;
+            left: 1px;
+            top: 27px;
+            width: 1474px;
+            height: 475px;
+            margin-right: 0;
+        }
+        .auto-style20{
+            position: absolute;
+            bottom: 115px;
+            left: 29px; 
+            color: white; 
+            font-size: 22px; 
+            font-weight:400; 
+            
+            width: 661px;
+            font-family:Arial;
+            height: 156px;
+        }
+        
+        .auto-style21 {
+             position: absolute;
+            bottom: 433px; 
+            left: 726px; 
+            color:orangered; 
+            font-size: 24px; 
+            font-weight:900; 
+            width: 248px;
+            font-family:Arial;
+            font-style:italic;
+            margin-bottom: 0px;
+        }
+        
+        .auto-style22 {
+            position: absolute;
+            bottom: 102px; 
+            left: 726px; 
+            
+            font-size: 24px; 
+            font-weight: 400; 
+            width: 248px;
+            font-family: Arial;
+            font-style: italic;
+            margin-bottom: 0px;
+            height: 310px;
+
+        }
+        .auto-style23 li{
+            margin-bottom:13px;
+        }
+
+        
+        .auto-style23 {
+            position: absolute;
+            bottom: 10px; 
+            left: 8px;
+            color: orangered; 
+            font-size: 54px; 
+            font-weight: 900; 
+            width: 248px;
+            font-family: Arial;
+            font-style: italic;
+            margin-bottom: 0px;
+        }
+        
+        
+        .auto-style24 {
+            position: absolute;
+            bottom: 425px;
+            left: 1129px; 
+            color: orangered;
+            font-size: 24px; 
+            font-weight: 900; 
+            width: 329px;
+            font-family: Arial;
+            font-style: italic;
+            margin-bottom: 0px;
+        }
+        
+        
+        .auto-style25 {
+            position: absolute;
+            top: 12px;
+            left: 17px;
+            width: 74%;
+            height: 81px;
+            right: 16px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        
+        
+        .auto-style26 {
+            position: absolute;
+            top: 5px;
+            left: 3px;
+            width: 94%;
+            height: 92px;
+            right: 2px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        
+        
+        .auto-style29 {
+            position:absolute;
+            width: 90px;
+            left: 1286px;
+            top: 177px;
+            height: 101px;
+        }
+        
+        
+        .auto-style30 {
+            position:absolute;
+            height: 98px;
+            width: 125px;
+            left: 1142px;
+            top: 181px;
+        }
+        .auto-style31 {
+            
+            width: 100%;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            height: 110px;
+        }
+        .auto-style32 {
+            
+            
+            text-align: center;
+            height: 60px;
+            position:absolute;
+            left: 149px;
+            top: 10px;
+            width: 1183px;
+        }
+                
+        .auto-style34 {
+            position:relative;
+            left: 7px;
+            top: -2px;
+            height: 98px;
+            width: 132px;
+        }
+        .auto-style35 {
+            position:absolute;
+            height: 42px;
+            width: 147px;
+            left: 1226px;
+            top: 20px;
+        }
+        .auto-style36 {
+            position: absolute;
+            height: 42px;
+            width: 147px;
+            left: 1227px;
+            top: 68px;
+        }
+        .auto-style37{
+            cursor: pointer; 
+              border-top-left-radius: 10px; 
+            border-top-right-radius: 10px; 
+            border-bottom-left-radius: 10px; 
+            border-bottom-right-radius: 10px;
+        }
+        .menu-item:hover{
+            transform:translateY(-5px);
+            color:orangered;
+        }
+        .menu-item{
+            transition:all 0.3s ease;
+        }
+         .menu .active {
+        background-color: yellow; /* Adjust this to the desired highlight color */
+         }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div class="auto-style31">
+            <header id="siteheader" runat="server">
+                <asp:ImageButton ID="ImageButton1" runat="server" CssClass="auto-style34" ImageUrl="~/image/wavegynlast.jpg" PostBackUrl="~/FRONTVERYNEWMAIN.aspx" />
+                <div class="auto-style32">
+                    <asp:Menu ID="Menu1" runat="server" class="menu" Orientation="Horizontal" Height="40px" Width="1200px" OnMenuItemClick="Menu1_MenuItemClick">
+                        <StaticMenuItemStyle CssClass="menu-item" />
+                        <StaticHoverStyle CssClass="menu-item-hover" />
+                        <Items>
+                            <asp:MenuItem  Text="OFFERS" Value="OFFERS"  NavigateUrl="~/OFFERMENUNEW.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="MEMBERSHIP" Value="MEMBERSHIP" NavigateUrl="~/MEMBERSHIPMENUNEW.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="PERSONAL TRAINING" Value="PERSONAL TRAINING" NavigateUrl="~/PT.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="CLASSES" Value="CLASSES" NavigateUrl="~/Classes.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="CAREERS" Value="CAREERS" NavigateUrl="~/Career.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="LOCATION" Value="LOCATION" NavigateUrl="~/LOCATION.aspx"></asp:MenuItem>
+
+                        </Items>
+                    </asp:Menu>
+                    
+                </div>
+                <div class="auto-style35">
+                    <asp:Button ID="Button1" runat="server" class="auto-style37" Text ="LOGIN" BackColor="#FF3300" BorderColor="White" BorderStyle="Solid" ForeColor="White" Height="34px" Width="145px" OnClick="Button1_Click" />
+                </div>
+                <div class="auto-style36">
+                    <asp:Button ID="Button2" runat="server" class="auto-style37" Text="SIGNUP" BackColor="#FF3300" BorderColor="White" BorderStyle="Solid" ForeColor="White" Height="34px" Width="145px" OnClick="Button2_Click" />
+                </div>
+            </header>
+            </div>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+
+         <div class="auto-style19">
+
+        <img src="image/BLACKHD2.jpg" class="auto-style17" />
+        <img src="image/wavegynlast.jpg" class="auto-style18" />
+
+                 <div class="auto-style20">
+            504-505, Morya Estate Commercial PRM LTD, Oshiwara Link Road,<br />
+            Andheri West, Mumbai Suburban, Maharashtra, 400053<br />
+<br /><br />
+            Phone: +9122 6678 7970<br />
+            Email: info@wavesgym.com
+        </div>
+
+                <div class="auto-style21">
+                    SITEMAP
+                </div>
+
+                 <div class="auto-style22">
+                     <asp:Menu ID="Menu2" runat="server" CssClass="auto-style23" Font-Size="Large" ForeColor="White" Height="300px">
+                          <StaticMenuItemStyle CssClass="menu-item" />
+                        <StaticHoverStyle CssClass="menu-item-hover" />
+                         <Items>
+                             <asp:MenuItem Text="About Us" Value="About Us"></asp:MenuItem>
+                             <asp:MenuItem Text="Membership" Value="Membership" NavigateUrl="~/MEMBERSHIPMENUNEW.aspx"></asp:MenuItem>
+                             <asp:MenuItem Text="Classes" Value="Classes" NavigateUrl="~/Classes.aspx"></asp:MenuItem>
+                             <asp:MenuItem Text="Offers" Value="Offers" NavigateUrl="~/OFFERMENUNEW.aspx"></asp:MenuItem>
+                             <asp:MenuItem Text="Careers at Waves Gym" Value="Careers at Waves Gym" NavigateUrl="~/Career.aspx"></asp:MenuItem>
+                             <asp:MenuItem Text="Location" Value="Location" NavigateUrl="~/LOCATION.aspx"></asp:MenuItem>
+                             <asp:MenuItem Text="Terms &amp; Conditions" Value="Terms &amp; Conditions"></asp:MenuItem>
+                             <asp:MenuItem Text="Membership Policy" Value="Membership Policy"></asp:MenuItem>
+                         </Items>
+                     </asp:Menu>
+                     </div>
+
+                <div class="auto-style24">
+                    FOLLOW US
+                </div>
+
+                 <div class="auto-style29">
+                     <asp:ImageButton ID="ImageButton3" runat="server" CssClass="auto-style26" ImageUrl="~/image/ig.jpg" OnClick="ImageButton3_Click" />
+                </div>
+                <div class="auto-style30">
+                    <asp:ImageButton ID="ImageButton2" runat="server" CssClass="auto-style25" ImageUrl="~/image/fb.jpg" OnClick="ImageButton2_Click"  />
+                </div>
+                    
+                
+    </div>
+         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var lastScrollTop = 0;
+            $(window).scroll(function (event) {
+                var st = $(this).scrollTop();
+                if (st > lastScrollTop) {
+                    // Scroll down
+                    $('#siteheader').css('top', '-120px'); // Adjust the value to the height of your header
+                } else {
+                    // Scroll up
+                    $('#siteheader').css('top', '0').addClass('transparent');
+                }
+                lastScrollTop = st;
+            });
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() == 0) {
+                    $('#siteheader').removeClass('transparent');
+                }
+            });
+        });
+    </script>
+    </form>
+</body>
+</html>

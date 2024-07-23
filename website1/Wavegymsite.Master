@@ -1,0 +1,570 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Wavegymsite.master.cs" Inherits="website1.Wavegymsite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+   
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 1500px;
+            margin-top: 85px;
+        }
+        .auto-style8 {
+            height: 586px;
+        }
+        .auto-style9 {
+            width: 1562px;
+            height: 621px;
+            margin-top: 68px;
+        }
+        .auto-style10 {
+            height: 682px;
+        }
+        .auto-style11 {
+            position: relative;
+            left: -94px;
+            top: -129px;
+            height: 348px;
+        }
+        .auto-style12 {
+            height: 62px;
+        }
+        .auto-style14 {
+            height: 43px;
+        }
+        .auto-style15 {
+            height: 46px;
+        }
+        .auto-style17 {
+            height: 69px;
+        }
+        .auto-style19 {
+            height: 21px;
+        }
+        .auto-style20 {
+            width: 1585px;
+            }
+        .base{
+            display:inline-block;
+            width:100%;
+        }
+        .imggym{
+            float:right;
+            width:100px;
+            vertical-align:top;
+            padding:0;
+       
+        }
+        .auto-style24 {
+            height: 128px;
+        }
+        .auto-style25 {
+            height: 483px;
+            width:1718px;
+        }
+        .auto-style26 {
+            height: 22px;
+        }
+        #Image2{
+            width:100%;
+            height:100%;
+        }
+        .auto-style27 {
+            position: absolute;
+            top: 268px;
+            left: 17px;
+        }
+        .auto-style28 {
+            position: absolute;
+            top: 361px;
+            left: 6px;
+            height: 38px;
+        }
+        .auto-style29 {
+            position: absolute;
+            top: 90px;
+            left: 17px;
+        }
+        .auto-style30 {
+            position: absolute;
+            top: 180px;
+            left: 16px;
+        }
+        .auto-style31 {
+            position: absolute;
+            top: 404px;
+            left: 8px;
+            height: 38px;
+            margin-top: 0px;
+        }
+        .auto-style33 {
+            position: absolute;
+            top: 320px;
+            left: 1040px;
+            height: 385px;
+            border-top-left-radius: 20px; 
+            border-top-right-radius: 20px; 
+            border-bottom-left-radius: 20px; 
+            border-bottom-right-radius: 20px; 
+            
+        }
+        .auto-style34 {
+            position: absolute;
+            top: 1398px;
+            left: 845px;
+            height: 378px;
+            width: 458px;
+            right: 318px;
+              border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .auto-style35 {
+            position: absolute;
+            top: -19px;
+            left: 760px;
+            height: 385px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            
+        }
+        .auto-style36 {
+            position: relative;
+            left: 0px;
+            top: 0px;
+            width: 1619px;
+            height: 665px;
+        }
+        .auto-style37 {
+            height: 43px;
+            width: 1693px;
+        }
+        .auto-style38 {
+            position: absolute;
+            top: 474px;
+            left: 125px;
+            width: 181px;
+            height: 59px;
+        }
+        .auto-style39 {
+            height: 762px;
+            margin-top: 118px;
+            text-align:center;
+        }
+        .auto-style40 {
+            margin-bottom: 0px;
+        }
+
+        .auto-style42 {
+            width: 1560px;
+            height: 200px; 
+            align-items:center;
+            align-content:center;
+            visibility:visible;
+            margin-right:20px;
+            
+        }
+        #menu1{
+           
+            text-align:center;
+        }
+        .auto-style45 {
+            position: absolute;
+            top: 3840px;
+            left: 519px;
+            }
+        .auto-style46 {
+            position: absolute;
+            top: 3917px;
+            left: 483px;
+            height: 38px;
+            width: 792px;
+            right: 543px;
+        }
+        .carousel {
+           display: flex;
+           overflow: hidden;
+           width: 100%;
+        }
+
+        .carousel-image {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-image:not(:first-child) {
+           margin-left: -100%;
+        }
+        .auto-style51 {
+            height: 680px;
+            text-align:center;
+            text-align:center;
+        }
+        
+        .auto-style53 {
+            position: absolute;
+            top: 3833px;
+            left: 71px;
+            height: 163px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: 297px;
+            margin-right: 0px;
+            margin-top: 0px;
+        }
+        
+        .auto-style54 {
+            position: absolute;
+            top: 4012px;
+            left: 12px;
+            height: 32px;
+            width: 792px;
+            right: 1014px;
+        }
+        
+        .auto-style55 {
+            position: absolute;
+            top: 4047px;
+            left: -53px;
+            height: 32px;
+            width: 792px;
+            right: 1079px;
+        }
+        
+        .auto-style56 {
+            position: absolute;
+            top: 4184px;
+            left: -132px;
+            height: 32px;
+            width: 746px;
+            right: 1204px;
+        }
+        .auto-style57 {
+            position: absolute;
+            top: 4244px;
+            left: -144px;
+            height: 32px;
+            width: 729px;
+            right: 1233px;
+        }
+        
+        .auto-style58 {
+            position: absolute;
+            top: 4004px;
+            left: 848px;
+            width: 228px;
+        }
+        
+        .auto-style59 {
+            position: absolute;
+            top: 4071px;
+            left: 829px;
+            width: 261px;
+            height: 291px;
+        }
+        .menu{
+            font-size:x-large;
+        }
+        
+        .auto-style60 {
+            position: absolute;
+            top: 4004px;
+            left: 1286px;
+            width: 261px;
+            height: 44px;
+        }
+        
+        .auto-style61 {
+            position: absolute;
+            top: 4086px;
+            left: 1287px;
+            width: 261px;
+            height: 97px;
+        }
+        .menu10{
+            font-size:x-large;
+        }
+        
+
+        
+        
+        .auto-style65 {
+            height: 78px;
+        }
+
+        
+        .auto-style66 {
+            width: 1560px;
+            height: 309px;
+            align-items: center;
+            align-content: center;
+            visibility: visible;
+            margin-right: 20px;
+            
+        }
+
+        
+        </style>
+</head>
+    
+<body>
+    <form id="form1" runat="server">
+         <header class="auto-style66" >&nbsp;<asp:Menu ID="Menu3" Class="auto-style42" runat="server" BackColor="Black" BorderWidth="100px" Font-Bold="True" Font-Names="Arial Black" Font-Overline="False" Font-Size="X-Large" ForeColor="White" Height="260px" Orientation="Horizontal" Width="1560px" BorderStyle="None" DisappearAfter="0" BorderColor="Black" ScrollDownText="" ScrollUpText="scroll up" position="centre" ItemWrap="True" ToolTip="textup">
+                            <DynamicHoverStyle ForeColor="Red" Height="100px" BackColor="Black" />
+                            <DynamicMenuItemStyle BackColor="Black" ForeColor="Red" />
+                           <Items>
+                                <asp:MenuItem ImageUrl="~/image/logo1.jpg" Selectable="False" Enabled="False"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/offer2.aspx" Text="OFFERS" Value="OFFERS"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Membership.aspx" Text="MEMBERSHIP" Value="MEMBERSHIP"></asp:MenuItem>
+                                <asp:MenuItem Text="PERSONAL TRAINING" Value="PERSONAL TRAINING" NavigateUrl="~/PT.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="CLASSES" Value="CLASSES" NavigateUrl="~/Classes.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="CARRER" Value="CARRER" NavigateUrl="~/WebForm1.aspx"></asp:MenuItem>
+                           </Items>
+                            <StaticHoverStyle BackColor="White" ForeColor="Red" BorderStyle="Solid"/>
+                        </asp:Menu>             
+                          </header>
+        
+        <div>
+       
+                   
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style8">
+                        <img class="auto-style9" src="image/bigimg.jpg" /></td>
+                </tr>
+                <tr>
+                    <td class="auto-style10">
+                        <div class="auto-style11" data-element_type="widget" data-id="aec1565" data-widget_type="heading.default" style="box-sizing: border-box; --flex-direction: initial; --flex-wrap: initial; --justify-content: initial; --align-items: initial; --align-content: initial; --gap: initial; --flex-basis: initial; --flex-grow: initial; --flex-shrink: initial; --order: initial; --align-self: initial; flex-basis: var(--flex-basis); flex-grow: var(--flex-grow); flex-shrink: var(--flex-shrink); order: var(--order); align-self: var(--align-self); flex-direction: var(--flex-direction); flex-wrap: var(--flex-wrap); justify-content: var(--justify-content); align-items: var(--align-items); align-content: var(--align-content); gap: var(--gap); --swiper-theme-color: #000; --swiper-navigation-size: 44px; --swiper-pagination-bullet-size: 6px; --swiper-pagination-bullet-horizontal-gap: 6px; --widgets-spacing: 20px 20px; margin-bottom: 20px; min-width: 0px; margin-block-end: 0px; text-align: center; max-width: 100%; color: rgb(0, 0, 0); font-family: &quot;Open Sauce&quot;, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(0, 0, 0); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+                            <div class="auto-style12" style="box-sizing: border-box; transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);">
+                                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <p class="auto-style37" style="box-sizing: border-box; margin: 0px; font-family: &quot;Go Bold&quot;, sans-serif; font-weight: bold; line-height: 1.1em; color: rgb(255, 255, 255); font-size: 50px; padding: 0px; text-transform: uppercase; font-style: italic; letter-spacing: -1px;">
+                                    <asp:Label ID="Label1" runat="server" Font-Size="Medium" Text="EXPERIENCE THE FITNESS WAVE AT MUMBAI'S FRIENDLIEST GYM IN ANDHERI WEST!"></asp:Label>
+                                </p>
+                                <p class="auto-style14" style="box-sizing: border-box; margin: 0px; font-family: &quot;Go Bold&quot;, sans-serif; font-weight: bold; line-height: 1.1em; color: rgb(255, 255, 255); font-size: 50px; padding: 0px; text-transform: uppercase; font-style: italic; letter-spacing: -1px;">
+                                    &nbsp;</p>
+                                <h2 class="auto-style15" style="box-sizing: border-box; margin: 0px; font-family: &quot;Go Bold&quot;, sans-serif; font-weight: bold; line-height: 1.1em; color: rgb(255, 255, 255); font-size: 50px; padding: 0px; text-transform: uppercase; font-style: italic; letter-spacing: -1px;">
+                                    <asp:Label ID="Label2" runat="server" Text="JOIN WAVES GYM TODAY"></asp:Label>
+                                </h2>
+                                <h2 class="auto-style15" style="box-sizing: border-box; margin: 0px; font-family: &quot;Go Bold&quot;, sans-serif; font-weight: bold; line-height: 1.1em; color: rgb(255, 255, 255); font-size: 50px; padding: 0px; text-transform: uppercase; font-style: italic; letter-spacing: -1px;">
+                                    <asp:TextBox ID="TtxtName" runat="server" style="height: 25px">NAME</asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:TextBox ID="txtEmail" runat="server">EMAIL</asp:TextBox>
+&nbsp;&nbsp;
+                                    <asp:TextBox ID="txtMobile" runat="server">MOBILE</asp:TextBox>
+&nbsp;&nbsp;&nbsp;
+                                    <asp:DropDownList ID="lblChoose" runat="server">
+                                        <asp:ListItem>choose one</asp:ListItem>
+                                    </asp:DropDownList>
+                                </h2>
+                                <p class="auto-style17" style="box-sizing: border-box; margin: 0px; font-family: &quot;Go Bold&quot;, sans-serif; font-weight: bold; line-height: 1.1em; color: rgb(255, 255, 255); font-size: 50px; padding: 0px; text-transform: uppercase; font-style: italic; letter-spacing: -1px;">
+                                    <asp:Button ID="Button1" runat="server" BackColor="#FF3300" Font-Bold="True" Font-Italic="True" Font-Size="Medium" ForeColor="White" OnClick="Button1_Click" Text="GET STARTED" />
+                                </p>
+                                <h5 class="auto-style26" style="box-sizing: border-box; margin: 0px; font-family: &quot;Open Sauce&quot;, sans-serif; font-weight: 500; line-height: var( --e-global-typography-cb923b5-line-height ); color: var( --e-global-color-c35a849 ); font-size: var( --e-global-typography-cb923b5-font-size ); padding: 0px; text-transform: var( --e-global-typography-cb923b5-text-transform ); letter-spacing: var( --e-global-typography-cb923b5-letter-spacing ); word-spacing: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: center; text-indent: 0px; widows: 2; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(0, 0, 0); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">#20Y<asp:Label ID="Label3" runat="server" Font-Bold="True" ForeColor="White" Text="#20YEARS OF SERVICE"></asp:Label>
+                                    EA</h5>
+                                <h5 class="auto-style19" style="box-sizing: border-box; margin: 0px; font-family: &quot;Open Sauce&quot;, sans-serif; font-weight: 500; line-height: var( --e-global-typography-cb923b5-line-height ); color: var( --e-global-color-c35a849 ); font-size: var( --e-global-typography-cb923b5-font-size ); padding: 0px; text-transform: var( --e-global-typography-cb923b5-text-transform ); letter-spacing: var( --e-global-typography-cb923b5-letter-spacing ); word-spacing: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: center; text-indent: 0px; widows: 2; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(0, 0, 0); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+                                    <asp:Label ID="Label4" runat="server" Font-Bold="True" ForeColor="White" Text="TO THE FITNESS &amp; WELLNESS COMMUNITY"></asp:Label>
+                                </h5>
+                                <h5 class="auto-style19" style="box-sizing: border-box; margin: 0px; font-family: &quot;Open Sauce&quot;, sans-serif; font-weight: 500; line-height: var( --e-global-typography-cb923b5-line-height ); color: var( --e-global-color-c35a849 ); font-size: var( --e-global-typography-cb923b5-font-size ); padding: 0px; text-transform: var( --e-global-typography-cb923b5-text-transform ); letter-spacing: var( --e-global-typography-cb923b5-letter-spacing ); word-spacing: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: center; text-indent: 0px; widows: 2; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(0, 0, 0); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+                                    <asp:Label ID="Label5" runat="server" Font-Bold="True" ForeColor="White" Text="#HEREFORYOU"></asp:Label>
+                                </h5>
+                                <h5 class="auto-style19" style="box-sizing: border-box; margin: 0px; font-family: &quot;Open Sauce&quot;, sans-serif; font-weight: 500; line-height: var( --e-global-typography-cb923b5-line-height ); color: var( --e-global-color-c35a849 ); font-size: var( --e-global-typography-cb923b5-font-size ); padding: 0px; text-transform: var( --e-global-typography-cb923b5-text-transform ); letter-spacing: var( --e-global-typography-cb923b5-letter-spacing ); word-spacing: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: center; text-indent: 0px; widows: 2; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(0, 0, 0); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+                                    <asp:Label ID="Label6" runat="server" Font-Bold="True" ForeColor="White" Text="#HERETOSTAY"></asp:Label>
+                                </h5>
+                                <h5 class="auto-style19" style="box-sizing: border-box; margin: 0px; font-family: &quot;Open Sauce&quot;, sans-serif; font-weight: 500; line-height: var( --e-global-typography-cb923b5-line-height ); color: var( --e-global-color-c35a849 ); font-size: var( --e-global-typography-cb923b5-font-size ); padding: 0px; text-transform: var( --e-global-typography-cb923b5-text-transform ); letter-spacing: var( --e-global-typography-cb923b5-letter-spacing ); word-spacing: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: center; text-indent: 0px; widows: 2; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(0, 0, 0); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">R#<asp:Label ID="Label7" runat="server" Font-Bold="True" ForeColor="White" Text="#SAFESWEATSPACE"></asp:Label>
+                                </h5>
+                                <p class="auto-style24" style="box-sizing: border-box; margin: 0px; font-family: &quot;Open Sauce&quot;, sans-serif; font-weight: 500; line-height: var( --e-global-typography-cb923b5-line-height ); color: var( --e-global-color-c35a849 ); font-size: var( --e-global-typography-cb923b5-font-size ); padding: 0px; text-transform: var( --e-global-typography-cb923b5-text-transform ); letter-spacing: var( --e-global-typography-cb923b5-letter-spacing ); word-spacing: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: center; text-indent: 0px; widows: 2; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(0, 0, 0); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+                                    &nbsp;</p>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+                        <div class="auto-style20">
+
+                        <asp:Label ID="Label8" runat="server" Text="YOUR BODY &amp; YOUR FITNESS REQUIREMENTS ARE UNIQUE."></asp:Label>
+                            <asp:Image ID="OverlayImage1" runat="server" ImageUrl="image/Perlowerside.jpg" CssClass="auto-style34" />
+
+                            <br />
+                            <br />
+                            <br />
+
+                        <asp:Label ID="Label16" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="XX-Large" ForeColor="Red" Height="0px" Text="CERTIFIED PERSONAL"></asp:Label>
+
+                        <br />
+                        <asp:Label ID="Label17" runat="server" Font-Bold="True" Font-Size="XX-Large" ForeColor="Red" Text="TRAINERS"></asp:Label>
+                        
+                            <br />
+                        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+                                                    <asp:Label ID="Label9" runat="server" Text="Get fit fast with Waves Gym’s certified personal trainers. Enjoy cardio, "></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <br />
+&nbsp;<asp:Label ID="Label10" runat="server" Text="strength, and weight training with top equipment. Join now and make"></asp:Label>
+&nbsp;<br />
+                        <asp:Label ID="Label11" runat="server" Text="‘Impossible’ ‘I’m Possible’!"></asp:Label>
+                            <br />
+                            <br />
+                            <br />
+                        <asp:Button ID="Button2" runat="server" BackColor="#FF3300" Font-Bold="True" Font-Italic="True" Font-Size="Medium" ForeColor="White" Height="72px" Text="BOOK A FREE SESSION" Width="251px" />
+                            <br />
+                            <div class="auto-style25">
+
+                                
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+
+                                
+                                <br />
+                   
+                                <div class="auto-style36">
+                                    <asp:Button ID="OverlayButton" runat="server" Text="JOIN TODAY" BackColor="OrangeRed" Font-Bold="true" CssClass="auto-style38" />
+                                    <asp:Image ID="Image2" runat="server" ImageUrl="image/black-small-square.jpg" Height="675px" Width="1522px" />
+                                     <asp:Label ID="Label13" runat="server" Text="1500 SQ.FT OPEN " style=" color: orangered; font-style:italic; font-family:Arial; font-weight:bold; font-size: 60px;" CssClass="auto-style29" />
+                                    <asp:Label ID="Label15" runat="server" Text=" AIR CROSSFIT" style=" color: orangered; font-style:italic; font-family:Arial; font-weight:bold; font-size : 60px;" CssClass="auto-style30" />
+                                    <asp:Label ID="Label18" runat="server" Text=" STUDIO" style=" color: orangered; font-style:italic; font-family:Arial; font-weight:bold; font-size: 60px;" CssClass="auto-style27" />
+                                    <asp:Label ID="Label12" runat="server" Text="EXPERIENCE THE FITNESS WAVE" style=" position: absolute; font-family:Arial; top: 20px; left: 20px; color: white; font-size: 25px;" />
+                                    <asp:Label ID="Label14" runat="server" Text="Our rooftop open air CrossFit studio will help" style=" color: white; font-size: 25px;" CssClass="auto-style28" />
+                                    <asp:Label ID="Label19" runat="server" Text="you push your limits and get you to your fitness goals." style=" color: white; font-size: 25px;" CssClass="auto-style31" />
+                                    <asp:Image ID="OverlayImage" runat="server" ImageUrl="image/ddff.jpg" CssClass="auto-style35" />
+                                    <asp:Image ID="Image1" runat="server" ImageUrl="image/images.jpg" CssClass="auto-style33" />
+
+                                 </div>
+
+                                <div class="auto-style39">
+
+                                    
+                                    <asp:Label ID="Label20" runat="server" Text="EXPERIENCED & INTERNATIONALLY CERTIFIED PERSONAL TRAINERS" Font-Bold="False" Font-Size="Large" ></asp:Label>
+                                    <br />
+                                  
+                                    <asp:Label ID="Label21" runat="server" Text="THE BEST FITNESS EXPERIENCE" Font-Bold="True" Font-Italic="True" Font-Size="30" ForeColor="#FF3300"></asp:Label>
+                                    <br />
+                                    <br />
+                                      
+                                    <asp:Label ID="Label22" runat="server" Text="We’re committed to bringing you the best workout experience." Font-Size="Large"></asp:Label>
+                                   
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                   <div>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:Image ID="Image5"  runat="server" ImageUrl="image/4.jpg" Height="273px" Width="291px" />  
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                                    <asp:Image ID="Image4"  runat="server" ImageUrl="image/3.jpg" Height="274px" Width="329px" />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:Image ID="img1"  runat="server" ImageUrl="image/1.jpg" CssClass="auto-style40" Height="274px" Width="270px" />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:Image ID="Image3"  runat="server" ImageUrl="image/2.jpg" Height="279px" Width="285px" />
+                                    <br />
+                                    &nbsp;<asp:Label ID="Label23" runat="server" Text="Clean, Comfortable and Safe"  />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:Label ID="Label24" runat="server" Text="Complimentary Valet Parking" />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:Label ID="Label25" runat="server" Text="Body Composition Assessment" /> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                    <asp:Label ID="Label26" runat="server" Text="Open 7 Days A Week" />
+                                       </div>
+
+                                    
+
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+
+                                    <asp:Button ID="Button3" runat="server" Text="JOIN TODAY" BackColor="#FF3300" Font-Bold="True" Font-Italic="True" Font-Size="X-Large" ForeColor="White" />
+                                    </div>
+                                
+                                    <div class="auto-style65">
+
+                                    </div>
+
+
+                                    <div class="auto-style51">   
+                                         
+
+                                       
+                                         
+
+                                         <br />
+                                         
+
+                                       
+                                         
+
+                                         <span style="color:white;  " class="auto-style59">
+                                             <asp:Menu ID="Menu2" runat="server" class="menu10" ForeColor="White" OnMenuItemClick="Menu2_MenuItemClick" >
+                <Items>
+                    <asp:MenuItem Text="About Us" Value="About Us"></asp:MenuItem>
+                    <asp:MenuItem Text="Membership" Value="Membership"></asp:MenuItem>
+                    <asp:MenuItem Text="Classes" Value="Classes"></asp:MenuItem>
+                    <asp:MenuItem Text="Offers" Value="Offers"></asp:MenuItem>
+                    <asp:MenuItem Text="Careers at Waves Gym" Value="Careers at Waves Gym"></asp:MenuItem>
+                    <asp:MenuItem Text="Location" Value="Location"></asp:MenuItem>
+                    <asp:MenuItem Text="Terms &amp; Condition " Value="Terms &amp; Condition "></asp:MenuItem>
+                    <asp:MenuItem Text="Membership Policy" Value="Membership Policy"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+                                             </span>
+                                         
+
+                                       
+                                         
+
+                                   <asp:Image ID="Image6" runat="server" ImageUrl="image/black-small-square.jpg" Height="684px" Width="1738px" />
+                                   <asp:Image ID="Image7" runat="server" ImageUrl="image/wavegynlast.jpg" CssClass="auto-style53" />
+                                   <asp:Label ID="Label27" runat="server" Text="EXPERIENCE WAVES GYM" style=" color: orangered; font-style:italic; font-family:Arial; font-weight:bold; font-size: 60px;" CssClass="auto-style45"/>
+                                   <asp:Label ID="Label28" runat="server" Text="Experience The Best Group Exercise Classes In Mumbai" style=" color: white; font-size: 25px;" CssClass="auto-style46" />
+                                   <asp:Label ID="Label29" runat="server" Text="504-505, Morya Estate Commercial PRM LTD, Oshiwara Link Road, " style=" color: white; font-size: 25px;" CssClass="auto-style54" />
+                                   <asp:Label ID="Label30" runat="server" Text="Andheri West, Mumbai Suburban, Maharashtra, 400053 " style=" color: white; font-size: 25px;" CssClass="auto-style55" />
+                                   <asp:Label ID="Label31" runat="server" Text="Phone: +9122 6678 7970 " style=" color: white; font-size: 25px;" CssClass="auto-style57" />
+                                   <asp:Label ID="Label32" runat="server" Text="Email: info@wavesgym.com" style=" color: white; font-size: 25px;" CssClass="auto-style56" />
+                                   <asp:Label ID="Label33" runat="server" Text="SITEMAP" style=" color: orangered; font-style:italic; font-family:Arial; font-weight:bold; font-size: 40px;" CssClass="auto-style58"/>
+                                         <span style="color:orangered; font-size:xx-large; font-weight:900; padding: 5px;" class="auto-style60">FOLLOW US</span> 
+            
+              <span style="color:white;  padding: 5px;" class="auto-style61"> 
+                  <asp:ImageButton ID="ImageButton7" runat="server" Height="84px" ImageUrl="~/image/fb.jpg" />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <asp:ImageButton ID="ImageButton8" runat="server" CssClass="auto-style22" Height="84px" ImageUrl="~/image/ig.jpg" Width="80px" />
+
+              </span>
+                                   
+                                        
+                                    </div>
+                            
+                     
+                    </td>
+                </tr>
+            </table>
+          
+        </div>
+    </form>
+</body>
+</html>
